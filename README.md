@@ -35,13 +35,13 @@ Before running the Streamlit Chatbot with Memory, you need to have the following
 
 To run the GitaSage Chatbot locally, follow these steps,
 
-Clone and navigate to the repository:
+- Clone and navigate to the repository:
 ```bash
 git clone https://github.com/OptimalKnight/GitaSage.git
 cd GitaSage
 ```
 
-Execute the bash script:
+- Execute the bash script:
 ```bash
 bash init.sh
 ```
@@ -55,6 +55,14 @@ Simply type your messages in the input box and press "Enter" to send them to the
 - The model used is a simplified version designed to run on low-resource machines and may not exhibit advanced intelligence.
 - The model has a token limit of around 512, so please limit your messages to below 200 tokens (words) to ensure proper functioning.
 - Due to the token limit, the model only remembers the last message and its response to maintain functionality within these constraints.
+
+## Kubernetes Deployment
+
+- To run the chatbot on Kubernetes web-server, run the following commands:
+```bash
+kubectl apply -f deployment.yaml
+open http://localhost:30000
+```
 
 ## Acknowledgments
 

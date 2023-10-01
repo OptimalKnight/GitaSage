@@ -48,7 +48,7 @@ bash init.sh
 
 This will fetch the necessary Docker image from Docker Hub, start the application in a Docker container, and open it in the web browser.
 
-Simply type your messages in the input box and press "Enter" to send them to the chatbot. The chatbot will respond based on the context of the conversation and the teachings of The Bhagavad Gita, thanks to its memory capabilities.
+Simply type your messages in the input box and press "Enter" to send them to the chatbot. The chatbot will respond based on the context of the conversation and teachings of The Bhagavad Gita, thanks to its memory capabilities.
 
 #### Please Note:
 

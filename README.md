@@ -25,6 +25,8 @@ Here's a brief overview of the key components:
 
 - `requirements.txt`: Contains a list of Python dependencies required to run the application.
 
+- `deployment.yaml`: The Kubernetes deployment file to deploy the application on a Kubernetes web-server.
+
 ## Prerequisites
 
 Before running the Streamlit Chatbot with Memory, you need to have the following installed:

@@ -6,6 +6,7 @@
 - [Project Overview](#project-overview)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+- [Kubernetes Deployment](#kubernetes-deployment)
 - [Acknowledgments](#acknowledgments)
 
 ## Introduction

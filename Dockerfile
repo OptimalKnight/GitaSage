@@ -6,7 +6,9 @@ WORKDIR /app
 
 COPY ./ ./
 
-RUN curl https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/resolve/main/llama-2-7b-chat.ggmlv3.q2_K.bin
+RUN apt-get update && apt-get install -y wget
+
+RUN wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/resolve/main/llama-2-7b-chat.ggmlv3.q2_K.bin
 
 RUN pip3 install -r requirements.txt
 

@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY ./ ./
 
-RUN wget https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/resolve/main/llama-2-7b-chat.ggmlv3.q2_K.bin
+RUN curl https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/resolve/main/llama-2-7b-chat.ggmlv3.q2_K.bin
 
 RUN pip3 install -r requirements.txt
 

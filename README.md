@@ -21,11 +21,11 @@ Here's a brief overview of the key components:
 
 - `Dockerfile`: The Dockerfile used to containerize the application for easy deployment and management.
 
+- `deployment.yaml`: The Kubernetes deployment file to deploy the application on a Kubernetes web-server.
+
 - `init.sh`: A bash script to fetch the necessary Docker image from Docker Hub, start the application in a Docker container, and open it in the web browser.
 
 - `requirements.txt`: Contains a list of Python dependencies required to run the application.
-
-- `deployment.yaml`: The Kubernetes deployment file to deploy the application on a Kubernetes web-server.
 
 ## Prerequisites
 

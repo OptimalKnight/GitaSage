@@ -16,7 +16,7 @@ def ChatModel(temperature, top_p):
 def generate_llama2_response():
     string_dialogue = '''You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only respond once as 'Assistant'.
     Utilize The Bhagavad Gita's teachings to address user queries. Quote most appropriate verses to provide insights and solutions. Limit response to 100 words.\n\n'''
-    
+
     for dict_message in st.session_state.messages[-3:]:
         current_dialogue = ""
         if dict_message["role"] == "user":
@@ -24,7 +24,7 @@ def generate_llama2_response():
         else:
             string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
 
-    # Removing unnecessary content
+    # Removing unnecessary content from output
     output = chat_model(f"prompt {string_dialogue} Assistant:")
     if "User:" in output:
         output_parts = output.split("User:", 1)
@@ -46,7 +46,7 @@ st.set_page_config(page_title="GitaSage", page_icon="🕉️", layout="centered"
 with st.sidebar:
     st.title('🕉️ GitaSage')
     st.markdown('Discover Inner Peace and Enlightenment')
-    
+
     temperature = 0.6
     top_p = 0.6 
     chat_model =ChatModel(temperature, top_p)
@@ -78,6 +78,6 @@ if st.session_state.messages[-1]["role"] != "assistant":
                 full_response += item
                 placeholder.markdown(full_response)
             placeholder.markdown(full_response)
-            
+
     message = {"role": "assistant", "content": full_response}
     st.session_state.messages.append(message)
